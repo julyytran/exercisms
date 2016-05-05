@@ -8,11 +8,10 @@ DnaTranscriber.prototype.toRna = function(dna) {
     'A':'U'
   }
 
-  var input = dna.split('')
   var rna = "";
 
-  for (var i = 0; i < input.length; i++) {
-    rna = rna + complements[input[i]]
+  for (var i = 0; i < dna.length; i++) {
+    rna = rna + complements[dna[i]]
   }
 
   return rna
